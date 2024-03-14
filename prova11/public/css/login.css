@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    top: 0;
+    position: fixed;
+    background-color: rgb(42, 10, 72);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+li{
+    margin: 0 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.fa {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+nav a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+h2{
+    margin-top: 10%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: rgb(42, 10, 72);
+    text-align: center;
+
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(42, 10, 72, 0.734);
+    width: 22%;
+    margin: 50px auto -5%;
+    text-align: center; /* Aggiunto per centrare il pulsante */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-color: rgb(79, 14, 140);
+}
+
+button {
+    background-color: rgb(79, 14, 140);
+    color: #fff;
+    width: 50%;
+    height: 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+a#registerLink { /* Corretto l'id del link di registrazione nel selettore */
+    display: block;
+    margin-top: 15px;
+    color: rgb(79, 14, 140);
+    text-decoration: none;
+    text-align: center;
+}
+
+

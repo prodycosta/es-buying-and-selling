@@ -1,0 +1,346 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #2a0a48;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 0 35px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.not-authenticated body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.not-authenticated #loginSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.not-authenticated h3 {
+    color: #2a0a48;
+    margin-bottom: 40px;
+}
+
+.not-authenticated h5 {
+    color: #50306e;
+    margin-bottom: 25px;
+}
+
+.not-authenticated p {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.not-authenticated button {
+    background-color: #2a0a48;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.not-authenticated button:hover {
+    background-color: #50306e;
+}
+
+
+
+
+
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20%;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Additional Styles */
+h3 {
+    margin-top: 8%;
+}
+
+.annunci-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card {
+    width: 17%; /* Larghezza desiderata per ogni card */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0  0;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.card-body a {
+    margin-top: 20px; /* Aggiunto uno spazio tra il testo e i pulsanti */
+    padding: 0;
+    margin-right: 20px;
+}
+
+.btn.btn-danger {
+    margin-top: 20px;
+    padding: 0;
+    margin-right: 20px;
+    color: #2a0a48;
+    background-color: transparent; /* Imposta lo sfondo del bottone su trasparente */
+    border: none; /* Rimuovi il bordo del bottone */
+    padding: 0; /* Rimuovi il padding del bottone */
+    cursor: pointer;
+    transition: color 0.1s; /* Cambia il cursore quando si passa sopra al bottone */
+}
+
+.btn.btn-danger:hover {
+    color: red; /* Cambia il colore in rosso quando si passa sopra al bottone */
+}
+
+.edit-button {
+    margin-top: 20px;
+    padding: 0;
+    color: #2a0a48;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; /* Aggiunto un cursore per indicare che è un elemento cliccabile */
+    transition: color 0.1s;
+
+}
+
+.edit-button:hover{
+    color: red;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#userSection {
+    position: relative;
+}
+
+#dropdownBtn {
+    background-color: #2a0a48;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#dropdownBtn:hover {
+    background-color: #50306e;
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(35, 1, 67, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#dropdownContent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdownContent li {
+    text-align: center;
+}
+
+#dropdownContent button, #dropdownContent a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dropdownContent button:hover, #dropdownContent a:hover {
+    background-color: #f5f5f5;
+}
+
+#deleteAccountBtn {
+    color: #fff;
+    background-color: #dc3545; /* Rosso di Bootstrap per il bottone di eliminazione */
+}
+
+#deleteAccountBtn:hover {
+    background-color: #bd2130;
+}
+
+#changePasswordBtn {
+    color: #fff;
+    background-color: #007bff; /* Blu di Bootstrap per il bottone di modifica password */
+}
+
+#changePasswordBtn:hover {
+    background-color: #0056b3;
+}
+
+#dropdownContent #logoutBtn {
+    color: #333;
+    background-color: #107dea;
+}
+
+#dropdownContent #logoutBtn:hover {
+    background-color: #e2e6ea;
+}
+
+
+
+    #accountInfoSection {
+        margin-top: 20px;
+     /* Aggiunto margine superiore */
+    }
+    h2, p {
+        margin-top: 10px; /* Aggiunto margine superiore per gli elementi h2 e p */
+    }
+
+    #dropdownBtn {
+        margin-top: 7%; /* Aggiunto margine superiore per dropdownBtn */
+        margin-left: 1%;
+    }
+
+    .center-content {
+        text-align: center;
+        color: #2a0a48; /* Colore del testo principale */
+    }
+
+    .center-content h2 {
+        margin: 0;
+        margin-bottom: 10px; /* Aggiunto margine inferiore maggiore per l'elemento h2 */
+        color: #50306e; /* Colore del testo per l'elemento h2 */
+    }
+
+    .center-content p {
+        margin: 0;
+        margin-bottom: 5px;
+        color: #333; /* Colore del testo per l'elemento p */
+    }
+
+    .user-info {
+        background-color: #f5f5f5; /* Colore di sfondo */
+        padding: 20px; /* Spaziatura interna */
+        border-radius: 10px; /* Bordo arrotondato */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+        margin-top: 20px; /* Margine superiore */
+    }
+
+    .user-info h2 {
+        color: #2a0a48; /* Colore del titolo */
+        margin-bottom: 10px; /* Spaziatura inferiore del titolo */
+    }
+
+    .user-info p {
+        color: #333; /* Colore del testo principale */
+        margin: 5px 0; /* Spaziatura verticale tra i paragrafi */
+    }
+
+
+
+

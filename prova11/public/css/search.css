@@ -1,0 +1,331 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    top: 0;
+
+    background-color: rgb(42, 10, 72);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+li{
+    margin: 0 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.fa {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+nav a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+
+}
+
+/*fine nav*/
+/*inizio form*/
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+form {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+button {
+    background-color: rgb(67, 0, 130);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 13%;
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(67, 0, 130,0.5);
+    transition: background-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transition: background-color 1s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*fine form*/
+
+/*inizio radio*/
+
+.sezione {
+    margin-right: auto; /* Imposta il margine destro a "auto" per spingere a sinistra */
+    margin-top: auto;
+    padding-bottom: 5%;
+    display: flex;
+    margin-left: 1%;
+    background-color: #ffffff; /* Aggiungi un colore di sfondo */
+    border-radius: 10px;
+    border-color: rgb(67, 0, 130);
+
+
+
+}
+
+.radio {
+    margin-right: auto; /* Imposta il margine destro a "auto" per spingere a sinistra */
+    margin-top: auto;
+    padding-bottom: 5%;
+    margin-left: 1%;
+    color: #4e4e4e;
+
+}
+
+.tipo-annuncio {
+    display: flex;
+    flex-direction: column;
+    color: #4e4e4e;
+
+}
+
+.tipo-annuncio input[type="radio"] {
+    display: none;
+
+}
+
+.tipo-annuncio label {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.tipo-annuncio input[type="radio"] + label {
+    position: relative;
+    display: flex;
+}
+
+.tipo-annuncio input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: rgba(67, 0, 130, 0.199);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    display: flex;
+}
+
+.tipo-annuncio input[type="radio"]:checked + label::before {
+    background-color: rgb(67, 0, 130);
+}
+
+/*fine radio*/
+/*inizio checkbox*/
+
+
+.condizioni {
+    margin-right: auto; /* Imposta il margine destro a "auto" per spingere a sinistra */
+    margin-left: 1%;
+}
+.condizioni section {
+    display: flex;
+    flex-direction: column;
+    color: #4e4e4e;
+}
+.condizioni section input {
+    margin-bottom: -8%;
+}
+
+
+
+
+
+
+/*fine checkbox*/
+/*annunci*/
+.contenitore-centrato {
+
+    width: 50%;
+    margin: auto; /* Imposta i margini automaticamente per centrare il contenitore */
+    text-align: center; /* Centra il contenuto orizzontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra il contenuto verticalmente */
+    margin-top: -30%; /* Aggiungi il margine superiore desiderato */
+}
+/* tutto cio che si trova all'interno degli annunci*/
+.scheda {
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #3907675b;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 8px rgba(48, 5, 89, 0.812);;
+}
+
+.scheda:hover {
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+.sezione-sinistra {
+    flex: 1;
+    overflow: hidden;
+}
+
+.sezione-sinistra img {
+    border-radius: 5px 5px 5px 0px;
+    width: 100%;
+    height: 80%;
+}
+
+.sezione-destra {
+    flex: 2;
+    padding: 30px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.prezzo {
+    margin: 5px 0;
+    font-size: 18px;
+    color: rgb(105, 3, 149);
+}
+/*suggermimenti di posizione*/
+#suggerimenti {
+    border: 1px solid #ccc;
+    max-height: 50px;
+    max-width: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+#suggerimenti div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#suggerimenti div:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* cosa cerchi? e posizione */
+
+input[type="text"],
+select {
+    display: flex;
+    max-width: fit-content;
+    height: 6%;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    position: center;
+    border-radius: 15px;
+    border-color: rgba(128, 128, 128, 0.621);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:hover,
+select:hover {
+    border-color: rgb(67, 0, 130);
+    box-shadow: 0 4px 6px rgba(67, 0, 130,0.5);
+}
+
+.filters-section {
+    max-width: min-content;
+    height: 40px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 12px;
+    border-color: grey;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    top: 0;
+    position: fixed;
+    background-color: rgb(42, 10, 72);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+li{
+    margin: 0 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.fa {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+nav a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+/*messages*/
+/*elenco*/
+
+.card-container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+
+    max-width: 45%; /* Larghezza massima della card */
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+}
+
+.card a {
+    text-decoration: none !important;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Ingrossa la card del 5% al passaggio del mouse */
+}
+
+
+
+.card img{
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 120px;
+    width: 170px;
+
+
+
+
+
+
+}
+.card-body {
+    /* Aggiungi spaziatura al contenuto a destra */
+    flex: 1; /* Flessibile in modo che occupi lo spazio rimanente */
+    display: flex;
+    flex-direction: column;
+    /* Rimuove eventuali margini che potrebbero influire sulla posizione dell'immagine */
+    margin-left: 10%;
+
+
+
+
+
+}
+
+.card-title {
+    font-size: 1rem;
+    color: rgb(42, 10, 72); /* o qualsiasi altro colore di accentuazione */
+
+
+}
+.card-text {
+    color: #777;
+    font-size: 0.8rem;
+    flex: 1;
+
+
+}
+.container h2 {
+    text-align: center;
+    margin-top: 11%; /* Aggiungi spaziatura sopra */
+    margin-bottom: 20px; /* Aggiungi spaziatura sotto */
+    color: rgb(42, 10, 72);
+    display: block;
+}
+
+
+
+
+

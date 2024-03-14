@@ -1,0 +1,70 @@
+
+
+
+
+/*ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
+
+        /* Stile per il contenitore centrato */
+
+        /* Stile per il contenitore centrato */
+        .contenitore-centrato {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        /* Stile per l'immagine grande */
+        .immagine-grande {
+            margin-right: 20px;
+        }
+
+        .immagine-grande img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Stile per le informazioni sull'annuncio */
+        .informazioni {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        /* Stile per il titolo dell'annuncio */
+        .informazioni h2 {
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* Stile per i dettagli dell'annuncio */
+        .informazioni p {
+            margin: 10px 0;
+            color: #555; /* Colore grigio scuro per i dettagli */
+        }
+
+        /* Stile per il prezzo */
+        .informazioni p.price {
+            color: #800080; /* Colore viola per il prezzo */
+        }
+
+        /* Stile per il container del venditore e della chat */
+        .venditore-container {
+            display: none; /* Inizialmente nascosto */
+            margin-top: 20px;
+        }
+
+        /* Stile per la chat box */
+        .chat-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+
